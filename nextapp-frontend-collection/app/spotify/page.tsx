@@ -16,15 +16,15 @@ export default function page() {
           <div className="bg-neutral-900 p-2 rounded-full">
             <GoHome size={24} className="inline-block" />
           </div>
-          <div className="bg-neutral-900 p-2 gap-1 rounded-full flex flex-row">
+          <div className="bg-neutral-900 p-2 gap-1 rounded-full flex flex-row opacity-80 hover:opacity-100 duration-200 border hover:border-slate-200 border-neutral-900 shadow-xl">
             <div>
               <CiSearch size={24} className="inline-block" />
             </div>
             <div>
-              <input className="" placeholder="What do you want to play?" />
+              <input className="pr-24 hover:opacity-100 outline-none hover:bg-neutral-850" placeholder="What do you want to play?" />
             </div>
             |
-            <div className="px-1 bg-neutral-900">
+            <div className="px-1 bg-neutral-900 ">
               <PiBrowsersDuotone size={24} />
             </div>
           </div>
