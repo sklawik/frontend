@@ -9,19 +9,31 @@ export default function page() {
   return (
     <div className="flex flex-col w-screen h-screen">
       <header className="h-14 w-full bg-black-500 flex justify-between">
-        <div className="justify-center items-center flex flex-row p-4">
+        <div
+          title="Spotify"
+          className="justify-center items-center flex flex-row p-4"
+        >
           <FaSpotify size={24} className="inline-block" />
         </div>
         <div className="justify-center items-center flex flex-row p-4 gap-2 grow ml-64">
-          <div className="hover:scale-105 cursor-pointer duration-100 bg-neutral-900 p-2 rounded-full">
-            <GoHome size={24} className="inline-block" />
+          <div className="flex flex-col relative group">
+            <div className="hover:scale-105 cursor-pointer duration-100 bg-neutral-900 p-2 rounded-full relative">
+              <GoHome size={24} className="inline-block" />
+            </div>
+            <div className="opacity-0  group-hover:opacity-100 delay-200 duration-100 absolute top-13  -left-2 bg-neutral-900 h-6 w-16 rounded-xs shadow-3xl text-md text-center  text-white">
+              Home
+            </div>
           </div>
+
           <div className=" bg-neutral-900 p-2 gap-1 rounded-full flex flex-row opacity-80 hover:opacity-100 duration-200 border hover:border-slate-200 border-neutral-900 shadow-xl">
             <div>
               <CiSearch size={24} className="inline-block" />
             </div>
             <div>
-              <input className="pr-24 hover:opacity-100 outline-none hover:bg-neutral-850" placeholder="What do you want to play?" />
+              <input
+                className="pr-24 hover:opacity-100 outline-none hover:bg-neutral-850"
+                placeholder="What do you want to play?"
+              />
             </div>
             |
             <div className="px-1 bg-neutral-900 hover:scale-105 cursor-pointer duration-100">
